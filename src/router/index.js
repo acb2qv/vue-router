@@ -9,15 +9,18 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+    props: true
   },
   {
-    path: "/details/:id",
+    path: "/details/:slug",
     name: "DestinationDetails",
-    component: () => import(/* webpackChunkName: "DestinationDetails" */ "@/views/DestinationDetails")
+    component: () => import(/* webpackChunkName: "DestinationDetails" */ "@/views/DestinationDetails"),
+    props: true
   },
 ];
 
 const router = new VueRouter({
+  mode: "history",
   routes,
 });
 
