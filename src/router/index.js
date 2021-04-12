@@ -12,10 +12,18 @@ const routes = [
     props: true
   },
   {
-    path: "/details/:slug",
+    path: "/destination/:slug",
     name: "DestinationDetails",
     component: () => import(/* webpackChunkName: "DestinationDetails" */ "@/views/DestinationDetails"),
-    props: true
+    props: true,
+    children: [
+      {
+        path: ":experienceSlug",
+        name: "experienceDetails",
+        component: () => import(/* webpackChunkName: "ExperienceDetails" */ "@/views/ExperienceDetails"),
+        props: true,
+      }
+    ]
   },
 ];
 
