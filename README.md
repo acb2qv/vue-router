@@ -1,4 +1,7 @@
 # vue-travel-app
+```
+from the Vue School tutorial
+```
 
 ## Project setup
 ```
