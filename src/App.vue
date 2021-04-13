@@ -65,4 +65,15 @@ export default{
 .fade-enter, .fade-leave-to{
   opacity: 0;
 }
+
+.input{
+  border: 1px solid green;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.btn{
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
 </style>
